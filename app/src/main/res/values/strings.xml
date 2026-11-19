@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CardioPulse | نبض وضغط</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_dashboard">الرئيسية</string>
+    <string name="nav_pulse">النبض</string>
+    <string name="nav_bp">ضغط الدم</string>
+    <string name="nav_history">السجل</string>
+    <string name="nav_settings">الإعدادات</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_greeting">المتابعة القلبية الذكية</string>
+    <string name="dashboard_subtitle">قياس دقيق للنبض (PPG) ومتابعة ضغط الدم (Tension Artérielle)</string>
+    <string name="latest_heart_rate">آخر قياس للنبض</string>
+    <string name="latest_blood_pressure">آخر قياس لضغط الدم</string>
+    <string name="no_readings_yet">لا توجد قياسات بعد</string>
+    <string name="measure_pulse_now">قياس النبض بالكاميرا</string>
+    <string name="measure_bp_now">قياس / تسجيل الضغط</string>
+    <string name="smart_insights_title">تحليلات طبية ذكية</string>
+    <string name="seven_day_average">متوسط آخر 7 أيام</string>
+    <string name="morning_avg">متوسط الصباح</string>
+    <string name="evening_avg">متوسط المساء</string>
+    <string name="in_target_range">ضمن المعدل الطبيعي</string>
+    <string name="bpm_unit">نبضة/د</string>
+    <string name="mmhg_unit">مم زئبق</string>
+    <string name="ms_unit">مللي ثانية</string>
+    <string name="sqi_label">جودة الإشارة</string>
+    <string name="map_label">الضغط الوسطي (MAP)</string>
+    <string name="pp_label">ضغط النبض (PP)</string>
+    <string name="hrv_label">تقلب النبض (HRV)</string>
+
+    <!-- PPG Heart Rate Screen -->
+    <string name="ppg_title">قياس دقات القلب (PPG)</string>
+    <string name="ppg_subtitle">كاميرا الهاتف + الفلاش مع تصفية إشارة مزدوجة وفحص الحركة</string>
+    <string name="ppg_permission_title">مطلوب إذن الكاميرا</string>
+    <string name="ppg_permission_desc">يستخدم التطبيق الكاميرا الخلفية والفلاش لالتقاط تغيرات تدفق الدم في طرف الإصبع (تقنية PPG). لا يتم حفظ أي صور أو فيديو مطلقًا.</string>
+    <string name="grant_permission">منح الإذن</string>
+    <string name="ppg_start">ابدأ القياس الدقيق (20 ثانية)</string>
+    <string name="ppg_stop">إيقاف القياس</string>
+    <string name="ppg_retry">إعادة القياس</string>
+    <string name="ppg_save_reading">حفظ القراءة في السجل</string>
+    <string name="ppg_discard">إلغاء</string>
+    <string name="ppg_guide_place_finger">ضع طرف إصبعك السبابة برفق لتغطية عدسة الكاميرا الخلفية والفلاش معًا.</string>
+    <string name="ppg_guide_too_hard">الضغط قوي جدًا على العدسة! خفف ضغط إصبعك قليلًا ليسمح بتدفق الدم.</string>
+    <string name="ppg_guide_too_light">يتسرب ضوء خارجي — غطِّ العدسة والفلاش بالكامل برفق.</string>
+    <string name="ppg_guide_motion">تم رصد حركة في اليد! ثبّت يدك وتنفس بهدوء.</string>
+    <string name="ppg_guide_calibrating">تم رصد الإصبع — جارٍ تثبيت الإشارة والتحقق من الجودة...</string>
+    <string name="ppg_guide_excellent">إشارة ممتازة — حافظ على الثبات حتى اكتمال القياس</string>
+    <string name="ppg_guide_good">إشارة جيدة — أبقِ إصبعك ثابتًا</string>
+    <string name="ppg_guide_weak">إشارة ضعيفة — دفّئ إصبعك أو عدّل موضعه قليلًا</string>
+    <string name="ppg_result_verified">قياس معتمد وعالي الدقة</string>
+    <string name="ppg_result_rejected_title">تم رفض القراءة لحمايتك من الخطأ</string>
+    <string name="ppg_reject_motion">حركة اليد كانت مرتفعة جدًا مما يؤثر على دقة القياس. أعد المحاولة مع إسناد يدك على طاولة.</string>
+    <string name="ppg_reject_low_sqi">جودة الإشارة الضوئية منخفضة (أقل من الحد الموثوق). تأكد من تغطية العدسة والفلاش بلطف وأن الإصبع دافئ.</string>
+    <string name="ppg_reject_disagreement">لم يتطابق التحليل الزمني مع التحليل الطيفي (FFT). يُرجى إعادة القياس في حالة سكون تام.</string>
+    <string name="ppg_reject_insufficient">مدة الثبات غير كافية للتحقق من النبض. أبقِ إصبعك ثابتًا لمدة 20 ثانية.</string>
+    <string name="ppg_confidence_high">ثقة عالية جدًا</string>
+    <string name="ppg_confidence_medium">ثقة جيدة</string>
+    <string name="ppg_rhythm_regular">إيقاع منتظم</string>
+    <string name="ppg_rhythm_irregular">تفاوت ملحوظ في الإيقاع — يُنصح بإعادة القياس أو مراجعة الطبيب</string>
+    <string name="ppg_time_bpm">تحليل القمم</string>
+    <string name="ppg_freq_bpm">تحليل FFT</string>
+    <string name="ppg_perfusion">مؤشر التروية (PI)</string>
+    <string name="context_label">حالة القياس</string>
+    <string name="context_resting">راحة</string>
+    <string name="context_morning">صباحًا</string>
+    <string name="context_evening">مساءً</string>
+    <string name="context_after_exercise">بعد مجهود</string>
+
+    <!-- Blood Pressure Screen -->
+    <string name="bp_title">ضغط الدم (Tension Artérielle)</string>
+    <string name="bp_tab_ble">جهاز Bluetooth طبي</string>
+    <string name="bp_tab_manual">إدخال ذكي</string>
+    <string name="bp_tab_protocol">بروتوكول الطبيب</string>
+    <string name="bp_transparency_title">لماذا لا نقيس الضغط بالكاميرا؟</string>
+    <string name="bp_transparency_body">لا توجد كاميرا هاتف تعطي قراءة طبية دقيقة لضغط الدم وحدها. لضمان عدم الخطأ، يرتبط التطبيق مباشرة بأجهزة قياس الضغط المعتمدة عبر Bluetooth (معيار GATT 0x1810) أو يسجل قراءات جهازك المنزلي مع تصنيف ESC/AHA وتحليل طبي متقدم.</string>
+    <string name="ble_permission_title">أذونات Bluetooth مطلوبة</string>
+    <string name="ble_permission_desc">للبحث عن أجهزة قياس الضغط المعتمدة (Omron, Beurer, Withings, Microlife وغيرها) واستقبال القراءات تلقائيًا.</string>
+    <string name="ble_scan_start">البحث عن جهاز ضغط Bluetooth</string>
+    <string name="ble_scan_stop">إيقاف البحث</string>
+    <string name="ble_disconnect">قطع الاتصال</string>
+    <string name="ble_status_idle">جاهز للبحث عن جهاز قياس الضغط</string>
+    <string name="ble_status_scanning">جارٍ البحث عن أجهزة قياس الضغط القريبة...</string>
+    <string name="ble_status_connecting">جارٍ الاتصال بالجهاز...</string>
+    <string name="ble_status_connected">متصل — ابدأ القياس على جهاز الضغط</string>
+    <string name="ble_status_ready">متصل وجاهز لاستقبال القراءة تلقائيًا</string>
+    <string name="ble_cuff_live">ضغط السوار المباشر</string>
+    <string name="ble_no_devices">لم يتم العثور على أجهزة بعد. شغّل وضع الاقتران (Bluetooth) في جهاز قياس الضغط.</string>
+    <string name="ble_connect">اتصال</string>
+    <string name="ble_warn_movement">تنبيه من الجهاز: تم رصد حركة أثناء القياس — يُنصح بالإعادة بعد 5 دقائق.</string>
+    <string name="ble_warn_cuff">تنبيه من الجهاز: السوار غير مثبت بشكل مثالي على الذراع.</string>
+    <string name="ble_warn_irregular">تنبيه من الجهاز: تم رصد نبض غير منتظم أثناء القياس.</string>
+    <string name="bp_systolic_label">الضغط الانقباضي (Systolique / SYS)</string>
+    <string name="bp_diastolic_label">الضغط الانبساطي (Diastolique / DIA)</string>
+    <string name="bp_pulse_label">النبض (اختياري / Pouls)</string>
+    <string name="bp_arm_label">الذراع</string>
+    <string name="bp_arm_left">الذراع اليسرى</string>
+    <string name="bp_arm_right">الذراع اليمنى</string>
+    <string name="bp_posture_label">الوضعية</string>
+    <string name="bp_posture_seated">جالسًا (موصى به)</string>
+    <string name="bp_posture_lying">مستلقيًا</string>
+    <string name="bp_posture_standing">واقفًا</string>
+    <string name="bp_notes_label">ملاحظات (دواء، صداع، توتر...)</string>
+    <string name="bp_save_btn">حفظ قراءة ضغط الدم</string>
+    <string name="bp_saved_msg">تم حفظ قراءة ضغط الدم بنجاح</string>
+    <string name="bp_avg_mode_title">وضع متوسط قراءتين (توصية أطباء القلب)</string>
+    <string name="bp_avg_mode_desc">احفظ القراءة الأولى ثم انتظر دقيقة وسجّل الثانية لحساب المتوسط الطبي الدقيق تلقائيًا.</string>
+    <string name="bp_avg_add_first">إضافة كقراءة #1</string>
+    <string name="bp_avg_add_second">احسب واحفظ متوسط القراءتين</string>
+    <string name="bp_avg_first_recorded">القراءة الأولى المسجلة</string>
+    <string name="bp_avg_clear">إلغاء المتوسط</string>
+    <string name="bp_rest_timer_title">مؤقت الراحة الطبية (5 دقائق)</string>
+    <string name="bp_rest_timer_start">ابدأ مؤقت 5 دقائق</string>
+    <string name="bp_rest_timer_reset">إعادة ضبط</string>
+    <string name="bp_checklist_title">شروط القياس الصحيح بلا أخطاء (ESC/ESH)</string>
+    <string name="bp_check_1">الجلوس بهدوء لمدة 5 دقائق قبل القياس</string>
+    <string name="bp_check_2">إسناد الظهر ووضع القدمين مسطحتين على الأرض (دون تشابك الساقين)</string>
+    <string name="bp_check_3">وضع الذراع على طاولة بمستوى القلب مع سوار مناسب لمحيط الذراع</string>
+    <string name="bp_check_4">عدم شرب القهوة أو التدخين أو ممارسة الرياضة قبل 30 دقيقة</string>
+    <string name="bp_check_5">عدم التحدث أو تحريك الهاتف أثناء نفخ السوار</string>
+
+    <!-- BP Clinical Categories -->
+    <string name="cat_hypotension">انخفاض ضغط الدم (Hypotension)</string>
+    <string name="cat_optimal">مثالي (Optimal)</string>
+    <string name="cat_normal">طبيعي (Normal)</string>
+    <string name="cat_high_normal">طبيعي مرتفع (Normal élevé)</string>
+    <string name="cat_elevated">مرتفع قليلًا (Élevé)</string>
+    <string name="cat_grade1">ارتفاع ضغط درجة 1 (HTA Grade 1)</string>
+    <string name="cat_grade2">ارتفاع ضغط درجة 2 (HTA Grade 2)</string>
+    <string name="cat_grade3">ارتفاع ضغط درجة 3 (HTA Grade 3)</string>
+    <string name="cat_isolated_sys">ارتفاع انقباضي معزول (HTA Systolique Isolée)</string>
+    <string name="cat_crisis">أزمة ارتفاع ضغط — طوارئ طبية</string>
+    <string name="bp_crisis_alert_title">تحذير طبي عاجل: ضغط دم مرتفع جدًا!</string>
+    <string name="bp_crisis_alert_body">استرح بهدوء 5 دقائق وأعد القياس. إذا بقي الضغط ≥ 180/120 أو شعرت بألم في الصدر، ضيق تنفس، دوار شديد، أو تنميل، اطلب الإسعاف فورًا.</string>
+    <string name="bp_hypotension_alert_body">الضغط منخفض. إذا كنت تشعر بدوار أو إغماء، استلقِ وارفع قدميك واستشر الطبيب.</string>
+    <string name="bp_err_invalid_range">قيم الضغط خارج النطاق الفيزيولوجي الصحيح (الانقباضي 50–300، الانبساطي 30–200).</string>
+    <string name="bp_err_dia_ge_sys">خطأ: يجب أن يكون الضغط الانقباضي (SYS) أكبر من الانبساطي (DIA) بـ 10 مم زئبق على الأقل.</string>
+
+    <!-- History & Analytics -->
+    <string name="history_title">السجل والتحليلات الطبية</string>
+    <string name="filter_7d">7 أيام</string>
+    <string name="filter_30d">30 يومًا</string>
+    <string name="filter_all">الكل</string>
+    <string name="filter_type_all">الكل</string>
+    <string name="filter_type_bp">الضغط</string>
+    <string name="filter_type_hr">النبض</string>
+    <string name="export_pdf">تصدير تقرير PDF للطبيب</string>
+    <string name="export_csv">تصدير ملف CSV</string>
+    <string name="export_success">تم إنشاء التقرير بنجاح</string>
+    <string name="chart_bp_title">تطور ضغط الدم (SYS / DIA)</string>
+    <string name="chart_hr_title">تطور نبض القلب (BPM)</string>
+    <string name="delete_confirm">حذف</string>
+    <string name="source_camera">كاميرا PPG</string>
+    <string name="source_ble">جهاز Bluetooth</string>
+    <string name="source_manual">إدخال يدوي</string>
+
+    <!-- Insights -->
+    <string name="insight_bp_controlled">ضغط الدم ضمن النطاق المستهدف في معظم القياسات الأخيرة — استمر في المتابعة المنتظمة.</string>
+    <string name="insight_bp_elevated">متوسط الضغط خلال 7 أيام مرتفع (%1$d/%2$d مم زئبق). يُنصح بعرض التقرير على طبيبك.</string>
+    <string name="insight_morning_surge">ملاحظة ذكية: ضغط الصباح أعلى بشكل ملحوظ من المساء (+%1$d مم زئبق). ناقش توقيت الدواء مع طبيبك.</string>
+    <string name="insight_wide_pp">ضغط النبض الوسطي مرتفع (%1$d مم زئبق). قد يشير لتصلب شرياني — يُفضل مراجعة الطبيب.</string>
+    <string name="insight_hr_tachy">متوسط نبض الراحة مرتفع (%1$d نبضة/د). راقب التوتر، الجفاف، أو استشر الطبيب.</string>
+    <string name="insight_hr_brady">متوسط نبض الراحة منخفض (%1$d نبضة/د). قد يكون طبيعيًا للرياضيين، وإلا يُنصح باستشارة الطبيب.</string>
+    <string name="insight_irregular_detected">تم رصد إشارات عدم انتظام في الإيقاع في %1$d قياس/قياسات حديثة. يُنصح بإجراء تخطيط قلب (ECG) لدى الطبيب.</string>
+    <string name="insight_need_more_data">أضف مزيدًا من القياسات (صباحًا ومساءً) للحصول على تحليلات طبية أدق.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">الإعدادات والشفافية الطبية</string>
+    <string name="settings_language">لغة التطبيق</string>
+    <string name="lang_arabic">العربية (RTL)</string>
+    <string name="lang_french">Français (LTR)</string>
+    <string name="settings_guideline">المعيار الطبي لتصنيف الضغط</string>
+    <string name="guideline_esc">ESC / ESH (الأوروبي — الأكثر اعتمادًا في المغرب العربي وأوروبا)</string>
+    <string name="guideline_aha">AHA / ACC (الأمريكي)</string>
+    <string name="settings_patient_name">اسم المريض (يظهر في تقرير PDF للطبيب)</string>
+    <string name="settings_patient_name_hint">مثال: أحمد بنعلي</string>
+    <string name="settings_save_profile">حفظ الاسم</string>
+    <string name="settings_privacy_title">الخصوصية والأمان 100% محليًا</string>
+    <string name="settings_privacy_body">تُحفظ جميع قياساتك الصحية داخل هاتفك فقط ولا تُرسل إلى أي خادم خارجي. لا يتم تسجيل أو حفظ أي صور من الكاميرا.</string>
+    <string name="settings_disclaimer_title">إخلاء مسؤولية طبي</string>
+    <string name="settings_disclaimer_body">هذا التطبيق أداة متابعة صحية ذكية ولا يُغني عن التشخيص الطبي أو تعديل الأدوية دون استشارة الطبيب. قياس النبض بالكاميرا (PPG) مخصص لمتابعة العافية والراحة، بينما تتطلب قياسات ضغط الدم الدقيقة استخدام جهاز قياس ضغط طبي معتمد (سوار ذراع / Bluetooth).</string>
+</resources>

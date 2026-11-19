@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CardioPulse | Tension &amp; Pouls</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_dashboard">Accueil</string>
+    <string name="nav_pulse">Pouls</string>
+    <string name="nav_bp">Tension</string>
+    <string name="nav_history">Historique</string>
+    <string name="nav_settings">Paramètres</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_greeting">Suivi Cardiaque Intelligent</string>
+    <string name="dashboard_subtitle">Pouls précis par caméra (PPG) &amp; Tension artérielle certifiée</string>
+    <string name="latest_heart_rate">Dernier pouls</string>
+    <string name="latest_blood_pressure">Dernière tension artérielle</string>
+    <string name="no_readings_yet">Aucune mesure enregistrée</string>
+    <string name="measure_pulse_now">Mesurer le pouls (PPG)</string>
+    <string name="measure_bp_now">Tension artérielle (BLE / Manuel)</string>
+    <string name="smart_insights_title">Analyses cliniques intelligentes</string>
+    <string name="seven_day_average">Moyenne sur 7 jours</string>
+    <string name="morning_avg">Moy. Matin</string>
+    <string name="evening_avg">Moy. Soir</string>
+    <string name="in_target_range">Dans la cible</string>
+    <string name="bpm_unit">BPM</string>
+    <string name="mmhg_unit">mmHg</string>
+    <string name="ms_unit">ms</string>
+    <string name="sqi_label">Qualité signal (SQI)</string>
+    <string name="map_label">Pression Moyenne (PAM)</string>
+    <string name="pp_label">Pression Pulsée (PP)</string>
+    <string name="hrv_label">Variabilité (VFC / HRV)</string>
+
+    <!-- PPG Heart Rate Screen -->
+    <string name="ppg_title">Fréquence cardiaque (PPG)</string>
+    <string name="ppg_subtitle">Caméra + flash avec double validation (Pics &amp; FFT) et détecteur de mouvement</string>
+    <string name="ppg_permission_title">Autorisation caméra requise</string>
+    <string name="ppg_permission_desc">L\'application utilise la caméra arrière et le flash pour détecter les pulsations capillaires au bout du doigt (PPG). Aucune image ni vidéo n\'est enregistrée.</string>
+    <string name="grant_permission">Autoriser</string>
+    <string name="ppg_start">Lancer la mesure précise (20 s)</string>
+    <string name="ppg_stop">Arrêter</string>
+    <string name="ppg_retry">Recommencer</string>
+    <string name="ppg_save_reading">Enregistrer la mesure</string>
+    <string name="ppg_discard">Annuler</string>
+    <string name="ppg_guide_place_finger">Posez délicatement l\'index sur la caméra arrière et le flash LED.</string>
+    <string name="ppg_guide_too_hard">Pression trop forte ! Relâchez légèrement le doigt pour laisser circuler le sang.</string>
+    <string name="ppg_guide_too_light">Lumière ambiante détectée — couvrez entièrement l\'objectif et le flash.</string>
+    <string name="ppg_guide_motion">Mouvement détecté ! Gardez la main immobile et respirez calmement.</string>
+    <string name="ppg_guide_calibrating">Doigt détecté — stabilisation du signal et contrôle qualité...</string>
+    <string name="ppg_guide_excellent">Signal excellent — restez immobile jusqu\'à la fin</string>
+    <string name="ppg_guide_good">Bon signal — maintenez votre doigt stable</string>
+    <string name="ppg_guide_weak">Signal faible — réchauffez votre doigt ou ajustez sa position</string>
+    <string name="ppg_result_verified">Mesure vérifiée haute précision</string>
+    <string name="ppg_result_rejected_title">Mesure rejetée pour éviter toute erreur</string>
+    <string name="ppg_reject_motion">Trop de mouvements de la main pendant la capture. Posez la main sur une table et réessayez.</string>
+    <string name="ppg_reject_low_sqi">Qualité du signal optique insuffisante. Couvrez doucement l\'objectif et le flash avec un doigt chaud.</string>
+    <string name="ppg_reject_disagreement">Écart entre l\'analyse temporelle et spectrale (FFT). Veuillez réessayer au repos complet.</string>
+    <string name="ppg_reject_insufficient">Durée stable insuffisante. Maintenez le doigt immobile pendant 20 secondes.</string>
+    <string name="ppg_confidence_high">Confiance très élevée</string>
+    <string name="ppg_confidence_medium">Bonne confiance</string>
+    <string name="ppg_rhythm_regular">Rythme régulier</string>
+    <string name="ppg_rhythm_irregular">Variabilité irrégulière détectée — répétez la mesure ou consultez un médecin</string>
+    <string name="ppg_time_bpm">Analyse Pics</string>
+    <string name="ppg_freq_bpm">Analyse FFT</string>
+    <string name="ppg_perfusion">Indice perfusion (PI)</string>
+    <string name="context_label">Contexte</string>
+    <string name="context_resting">Au repos</string>
+    <string name="context_morning">Matin</string>
+    <string name="context_evening">Soir</string>
+    <string name="context_after_exercise">Après effort</string>
+
+    <!-- Blood Pressure Screen -->
+    <string name="bp_title">Tension artérielle</string>
+    <string name="bp_tab_ble">Tensiomètre BLE</string>
+    <string name="bp_tab_manual">Saisie intelligente</string>
+    <string name="bp_tab_protocol">Protocole médical</string>
+    <string name="bp_transparency_title">Pourquoi ne pas mesurer la tension par caméra ?</string>
+    <string name="bp_transparency_body">Aucune caméra de smartphone ne peut mesurer la tension artérielle avec une fiabilité médicale seule. Pour zéro erreur, CardioPulse se connecte aux tensiomètres Bluetooth certifiés (standard GATT 0x1810) ou analyse vos mesures brassard selon ESC/AHA.</string>
+    <string name="ble_permission_title">Autorisations Bluetooth requises</string>
+    <string name="ble_permission_desc">Pour détecter les tensiomètres certifiés (Omron, Beurer, Withings, Microlife...) et recevoir automatiquement vos mesures.</string>
+    <string name="ble_scan_start">Rechercher un tensiomètre Bluetooth</string>
+    <string name="ble_scan_stop">Arrêter la recherche</string>
+    <string name="ble_disconnect">Déconnecter</string>
+    <string name="ble_status_idle">Prêt à détecter un tensiomètre</string>
+    <string name="ble_status_scanning">Recherche de tensiomètres Bluetooth...</string>
+    <string name="ble_status_connecting">Connexion en cours...</string>
+    <string name="ble_status_connected">Connecté — lancez la mesure sur le tensiomètre</string>
+    <string name="ble_status_ready">Prêt à recevoir la mesure automatiquement</string>
+    <string name="ble_cuff_live">Pression brassard en direct</string>
+    <string name="ble_no_devices">Aucun appareil trouvé. Activez le mode appairage Bluetooth sur votre tensiomètre.</string>
+    <string name="ble_connect">Connecter</string>
+    <string name="ble_warn_movement">Alerte appareil : mouvement détecté durant la mesure — répétez après 5 min.</string>
+    <string name="ble_warn_cuff">Alerte appareil : positionnement du brassard imparfait.</string>
+    <string name="ble_warn_irregular">Alerte appareil : pouls irrégulier détecté pendant la mesure.</string>
+    <string name="bp_systolic_label">Pression Systolique (SYS)</string>
+    <string name="bp_diastolic_label">Pression Diastolique (DIA)</string>
+    <string name="bp_pulse_label">Pouls (optionnel)</string>
+    <string name="bp_arm_label">Bras</string>
+    <string name="bp_arm_left">Bras gauche</string>
+    <string name="bp_arm_right">Bras droit</string>
+    <string name="bp_posture_label">Position</string>
+    <string name="bp_posture_seated">Assis (recommandé)</string>
+    <string name="bp_posture_lying">Allongé</string>
+    <string name="bp_posture_standing">Debout</string>
+    <string name="bp_notes_label">Notes (traitement, céphalée, stress...)</string>
+    <string name="bp_save_btn">Enregistrer la tension</string>
+    <string name="bp_saved_msg">Mesure de tension enregistrée</string>
+    <string name="bp_avg_mode_title">Mode moyenne de 2 mesures (Recommandation ESC)</string>
+    <string name="bp_avg_mode_desc">Prenez 2 mesures espacées de 1 à 2 minutes : l\'application calcule et enregistre automatiquement la moyenne clinique.</string>
+    <string name="bp_avg_add_first">Enregistrer comme mesure #1</string>
+    <string name="bp_avg_add_second">Calculer &amp; sauvegarder la moyenne</string>
+    <string name="bp_avg_first_recorded">Mesure #1 enregistrée</string>
+    <string name="bp_avg_clear">Annuler la moyenne</string>
+    <string name="bp_rest_timer_title">Minuteur de repos clinique (5 min)</string>
+    <string name="bp_rest_timer_start">Démarrer 5 min</string>
+    <string name="bp_rest_timer_reset">Réinitialiser</string>
+    <string name="bp_checklist_title">Règles d\'or d\'une mesure fiable (ESC/ESH)</string>
+    <string name="bp_check_1">Rester assis au calme 5 minutes avant la mesure</string>
+    <string name="bp_check_2">Dos appuyé, pieds à plat au sol (jambes non croisées)</string>
+    <string name="bp_check_3">Bras posé sur une table au niveau du cœur, brassard adapté</string>
+    <string name="bp_check_4">Pas de café, tabac ou effort dans les 30 minutes précédentes</string>
+    <string name="bp_check_5">Ne pas parler ni bouger pendant le gonflage</string>
+
+    <!-- BP Clinical Categories -->
+    <string name="cat_hypotension">Hypotension</string>
+    <string name="cat_optimal">Optimale</string>
+    <string name="cat_normal">Normale</string>
+    <string name="cat_high_normal">Normale haute</string>
+    <string name="cat_elevated">Élevée</string>
+    <string name="cat_grade1">HTA Grade 1</string>
+    <string name="cat_grade2">HTA Grade 2</string>
+    <string name="cat_grade3">HTA Grade 3</string>
+    <string name="cat_isolated_sys">HTA Systolique Isolée</string>
+    <string name="cat_crisis">Crise Hypertensive — Urgence</string>
+    <string name="bp_crisis_alert_title">Alerte médicale : Tension très élevée !</string>
+    <string name="bp_crisis_alert_body">Reposez-vous 5 minutes et recommencez. Si la tension reste ≥ 180/120 ou en cas de douleur thoracique, essoufflement ou vertige, appelez les urgences.</string>
+    <string name="bp_hypotension_alert_body">Tension basse détectée. En cas de vertige ou malaise, allongez-vous jambes surélevées et consultez.</string>
+    <string name="bp_err_invalid_range">Valeurs hors plage physiologique (SYS 50–300, DIA 30–200).</string>
+    <string name="bp_err_dia_ge_sys">Erreur : la systolique (SYS) doit dépasser la diastolique (DIA) d\'au moins 10 mmHg.</string>
+
+    <!-- History & Analytics -->
+    <string name="history_title">Historique &amp; Analyses</string>
+    <string name="filter_7d">7 jours</string>
+    <string name="filter_30d">30 jours</string>
+    <string name="filter_all">Tout</string>
+    <string name="filter_type_all">Tout</string>
+    <string name="filter_type_bp">Tension</string>
+    <string name="filter_type_hr">Pouls</string>
+    <string name="export_pdf">Exporter rapport PDF médecin</string>
+    <string name="export_csv">Exporter CSV</string>
+    <string name="export_success">Rapport généré avec succès</string>
+    <string name="chart_bp_title">Évolution tension artérielle (SYS / DIA)</string>
+    <string name="chart_hr_title">Évolution fréquence cardiaque (BPM)</string>
+    <string name="delete_confirm">Supprimer</string>
+    <string name="source_camera">Caméra PPG</string>
+    <string name="source_ble">Tensiomètre BLE</string>
+    <string name="source_manual">Saisie manuelle</string>
+
+    <!-- Insights -->
+    <string name="insight_bp_controlled">Votre tension est majoritairement dans la cible recommandée. Poursuivez votre suivi régulier.</string>
+    <string name="insight_bp_elevated">Moyenne sur 7 jours élevée (%1$d/%2$d mmHg). Partagez le rapport PDF avec votre médecin.</string>
+    <string name="insight_morning_surge">Alerte matinale : votre tension du matin dépasse nettement celle du soir (+%1$d mmHg). Parlez-en à votre médecin.</string>
+    <string name="insight_wide_pp">Pression pulsée moyenne élevée (%1$d mmHg). Une évaluation cardiovasculaire est conseillée.</string>
+    <string name="insight_hr_tachy">Fréquence cardiaque moyenne élevée au repos (%1$d BPM). Surveillez le stress, l\'hydratation ou consultez.</string>
+    <string name="insight_hr_brady">Fréquence cardiaque moyenne basse au repos (%1$d BPM). Normal chez les sportifs, sinon parlez-en au médecin.</string>
+    <string name="insight_irregular_detected">Irrégularités de rythme détectées sur %1$d mesure(s) récente(s). Un ECG médical est recommandé.</string>
+    <string name="insight_need_more_data">Ajoutez des mesures matin et soir pour activer les analyses cliniques avancées.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Paramètres &amp; Transparence</string>
+    <string name="settings_language">Langue de l\'application</string>
+    <string name="lang_arabic">العربية (RTL)</string>
+    <string name="lang_french">Français (LTR)</string>
+    <string name="settings_guideline">Référentiel médical de classification</string>
+    <string name="guideline_esc">ESC / ESH (Européen — standard médical francophone)</string>
+    <string name="guideline_aha">AHA / ACC (Américain)</string>
+    <string name="settings_patient_name">Nom du patient (sur le rapport PDF)</string>
+    <string name="settings_patient_name_hint">Ex. : Karim Benali</string>
+    <string name="settings_save_profile">Enregistrer le nom</string>
+    <string name="settings_privacy_title">Confidentialité 100 % locale</string>
+    <string name="settings_privacy_body">Toutes vos données de santé restent stockées exclusivement sur votre téléphone. Aucune image caméra n\'est enregistrée ni transmise.</string>
+    <string name="settings_disclaimer_title">Avertissement médical</string>
+    <string name="settings_disclaimer_body">CardioPulse est un outil intelligent d\'autosurveillance et ne remplace pas un diagnostic médical ni un avis de cardiologue. Le pouls par caméra (PPG) sert au suivi au repos, tandis que la tension artérielle fiable requiert un tensiomètre brassard certifié (Bluetooth ou manuel).</string>
+</resources>

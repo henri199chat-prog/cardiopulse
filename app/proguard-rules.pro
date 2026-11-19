@@ -1,0 +1,3 @@
+-keep class com.cardiopulse.app.data.local.** { *; }
+-keep class com.cardiopulse.app.core.bp.** { *; }
+-keep class com.cardiopulse.app.core.ppg.** { *; }
